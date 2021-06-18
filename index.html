@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width ,initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="src/index.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="section left">
+        <div class="form-container">
+          <div class="heading" id="form-heading">Add Grocery Item</div>
+          <div class="form">
+            <div class="form-item">
+              <span class="form-item-label"> Item Name </span>
+              <input type="text" id="name"/>
+              <span class="form-item-validation-error" id="name-validation"></span>
+            </div>
+            <div >
+              <span class="form-item-label"> Quantity </span>
+              <div class="input-qty-container ">
+                <div class="input-qty-incrementer  decrease">-</div>
+                <input type="text" class="input-qty" id="qty">
+                <div class="input-qty-incrementer  increase">+</div>
+           
+            
+            
+              </div>
+              <span class="form-item-validation-error" id="qty-validation"></span>
+             
+              <!-- <input type="number" id="qty" min="1" pattern="^[1-9]\d*" /> -->
+              
+            </div>
+            <div class="btn-container">
+              <button id="add_edit" class="btn">Add Item</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section right">
+        <div class="heading">Grocery Item</div>
+        <div class="no-data">
+          <img width="325px" src="/icons/grocery.png">
+          <h2 class="no-data-heading">No items!</h2>
+        </div>
+
+        <div class="items-container">
+        </div>
+      </div>
+    </div>
+
+
+    
+
+  </div>
+  </body>
+</html>
